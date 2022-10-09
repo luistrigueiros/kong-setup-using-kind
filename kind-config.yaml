@@ -7,11 +7,19 @@ networking:
 nodes:
   - role: control-plane
     extraPortMappings:
-    - listenAddress: "0.0.0.0"
+    # - listenAddress: "0.0.0.0"
+    #   protocol: TCP
+    #   hostPort: 80
+    #   containerPort: 80
+    # - listenAddress: "0.0.0.0"
+    #   protocol: TCP
+    #   hostPort: 443
+    #   containerPort: 443
+    - listenAddress: "0.0.0.0"  # kong-proxy
       protocol: TCP
-      hostPort: 80
-      containerPort: 80
-    - listenAddress: "0.0.0.0"
+      hostPort: 8000
+      containerPort: 8000
+    - listenAddress: "0.0.0.0"  # kong-proxy
       protocol: TCP
-      hostPort: 443
-      containerPort: 443
+      hostPort: 8002
+      containerPort: 8002
