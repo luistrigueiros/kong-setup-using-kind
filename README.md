@@ -23,6 +23,10 @@ https://docs.konghq.com/gateway/3.0.x/install/kubernetes/helm-quickstart/
 
 For best experience use [Lens](https://k8slens.dev/index.html) or [k9s](https://k9scli.io/)
 
+![LensPortForwarding](./img/lens-portforward.jpg)
+
+![K9S-View-Namespace](./img/k9s-view-namespace.jpg)
+
 # Test Kong:
 
 λ curl http://localhost:9090/ 
