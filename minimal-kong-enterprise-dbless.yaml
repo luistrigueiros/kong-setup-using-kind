@@ -18,7 +18,7 @@ enterprise:
     enabled: false
 
 manager:
-  enabled: false
+  enabled: true
 
 portal:
   enabled: false
