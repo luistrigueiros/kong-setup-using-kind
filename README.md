@@ -29,9 +29,13 @@ For best experience use [Lens](https://k8slens.dev/index.html) or [k9s](https://
 
 # Test Kong:
 
+```
 λ curl http://localhost:9090/ 
 {"message":"no Route matched with those values"}
+```
+Using [nip.io](https://nip.io/)
 
-C:\work\learning\kong\using-kind 
+```
 λ curl http://127-0-0-1.nip.io:9090/ 
 {"message":"no Route matched with those values"}
+```
