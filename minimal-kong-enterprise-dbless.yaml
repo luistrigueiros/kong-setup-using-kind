@@ -11,7 +11,7 @@ enterprise:
   # See instructions regarding enterprise licenses at https://github.com/Kong/charts/blob/master/charts/kong/README.md#kong-enterprise-license
   license_secret: kong-enterprise-license
   vitals:
-    enabled: false
+    enabled: true
   portal:
     enabled: false
   rbac:
@@ -19,6 +19,7 @@ enterprise:
 
 manager:
   enabled: true
+  type: NodePort
 
 portal:
   enabled: false
